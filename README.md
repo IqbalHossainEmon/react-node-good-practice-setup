@@ -54,8 +54,6 @@ Follow the below settings for VS Code -
 
 Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF (Carriage return and line feed). To do that, just click LF/CRLF in bottom right corner of editor, click it and change it to "LF". If you dont do that, you will get errors in my setup.
 
-<img src="public/line-feed.jpg" alt="Line Feed" width="700">
-
 ## Linting Setup
 
 ### Install Dev Dependencies
@@ -69,9 +67,7 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 or You can also add a new script in the scripts section like below to install everything with a single command:
 
 ```json
-scripts: {
-     "npm i -D prettier eslint-config-prettier eslint-plugin-prettiert && npx install-peerdeps --dev eslint-config-airbnb"
-}
+npm i -D prettier eslint-config-prettier eslint-plugin-prettiert && npx install-peerdeps --dev eslint-config-airbnb
 ```
 
 ``
