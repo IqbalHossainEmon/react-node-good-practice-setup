@@ -59,7 +59,7 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 ### Install Dev Dependencies
 
 ```
-npx init @eslint/config
+npm init @eslint/config
 ```
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier
