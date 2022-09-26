@@ -59,9 +59,9 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 ### Install Dev Dependencies
 
 ```sh
-yarn add -D prettier
+npm i -D prettier
 npx install-peerdeps --dev eslint-config-airbnb
-yarn add -D eslint-config-prettier eslint-plugin-prettier
+npm i -D eslint-config-prettier eslint-plugin-prettier
 ```
 
 or You can also add a new script in the scripts section like below to install everything with a single command:
