@@ -58,23 +58,13 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 
 ### Install Dev Dependencies
 
-```sh
-npm i -D prettier
+```
+npx init @eslint/config
 ```
 ```
-npm i -D eslint-config-prettier eslint-plugin-prettier
-```
-```
-npx install-peerdeps --dev eslint-config-airbnb
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
 
-or You can also add a new script in the scripts section like below to install everything with a single command:
-
-```json
-npm i -D prettier eslint-config-prettier eslint-plugin-prettier && npx install-peerdeps --dev eslint-config-airbnb
-```
-
-``
 
 ### Create Linting Configuration file manually
 
