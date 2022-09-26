@@ -67,7 +67,7 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 or You can also add a new script in the scripts section like below to install everything with a single command:
 
 ```json
-npm i -D prettier eslint-config-prettier eslint-plugin-prettiert && npx install-peerdeps --dev eslint-config-airbnb
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier && npx install-peerdeps --dev eslint-config-airbnb
 ```
 
 ``
