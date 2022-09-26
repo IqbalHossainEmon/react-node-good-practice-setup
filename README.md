@@ -94,12 +94,6 @@ Create a `.eslintrc` file in the project root and enter the below contents:
         "linebreak-style": 0,
         "react/prop-types": 0,
         "jsx-a11y/click-events-have-key-events": 0,
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [".js", ".jsx"]
-            }
-        ],
         "prettier/prettier": [
             "error",
             {
