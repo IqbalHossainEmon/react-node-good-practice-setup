@@ -62,7 +62,7 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 npm init @eslint/config
 ```
 ```
-npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
 ```
 
 
@@ -79,6 +79,14 @@ Create a `.eslintrc` file in the project root and enter the below contents:
         "prettier",
         "plugin:jsx-a11y/recommended"
     ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "requireConfigFile": false,
+        "babelOptions": {
+            "presets": ["@babel/preset-react"]
+        }
+    },
     "env": {
         "browser": true,
         "node": true,
