@@ -108,7 +108,7 @@ Create a `.eslintrc` file in the project root and enter the below contents:
                 "trailingComma": "es5",
                 "singleQuote": true,
                 "printWidth": 100,
-                "tabWidth": 4,
+                "tabWidth": 2,
                 "semi": true,
                 "endOfLine": "auto"
             }
