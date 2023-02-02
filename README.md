@@ -94,6 +94,7 @@ Create a `.eslintrc` file in the project root and enter the below contents:
         "jest": true
     },
     "rules": {
+        "react/jsx-props-no-spreading": 0,
         "react/react-in-jsx-scope": 0,
         "react-hooks/rules-of-hooks": "error",
         "no-console": 0,
