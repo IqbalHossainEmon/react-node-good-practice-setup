@@ -65,8 +65,7 @@ or
 ```
 yarn add -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
 ```
-
-
+-----------------------------------------------------------------
 ```
 npm init @eslint/config
 ```
@@ -78,7 +77,7 @@ or
 ```
 yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
-
+-----------------------------------------------------------------
 ```
 npm init @eslint/config
 ```
