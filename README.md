@@ -70,6 +70,7 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint
 ```
 
 <br/>
+
 ```
 npm init @eslint/config
 ```
@@ -84,8 +85,8 @@ or
 ```
 yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
-
 <br/>
+
 ```
 npm init @eslint/config
 ```
