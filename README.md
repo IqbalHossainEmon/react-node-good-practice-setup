@@ -144,21 +144,15 @@ Create a `.eslintrc` file in the project root and enter the below contents:
 #### For Nodejs
 ```json
 {
-  "extends": [
-    "airbnb",
-    "airbnb-base",
-    "airbnb/hooks",
-    "eslint:recommended",
-    "prettier
-  ],
+  "extends": ["airbnb-base", "eslint:recommended", "prettier"],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": "latest"
   },
   "env": {
-    "browser": true,
     "node": true,
     "es2023": true,
-    "jest": true
+    "jest": true,
+    "commonjs": true
   },
   "rules": {
     "no-console": 0,
@@ -179,4 +173,5 @@ Create a `.eslintrc` file in the project root and enter the below contents:
   },
   "plugins": ["prettier"]
 }
+
 ```
