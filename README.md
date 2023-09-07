@@ -61,6 +61,12 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
 ```
+or
+```
+yarn add -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
+```
+
+
 ```
 npm init @eslint/config
 ```
@@ -68,6 +74,11 @@ npm init @eslint/config
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
+or
+```
+yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
+```
+
 ```
 npm init @eslint/config
 ```
@@ -77,6 +88,7 @@ npm init @eslint/config
 
 Create a `.eslintrc` file in the project root and enter the below contents:
 
+#### For React
 ```json
 {
   "extends": [
@@ -99,7 +111,7 @@ Create a `.eslintrc` file in the project root and enter the below contents:
   "env": {
     "browser": true,
     "node": true,
-    "es2021": true,
+    "es2023": true,
     "jest": true
   },
   "rules": {
@@ -127,5 +139,44 @@ Create a `.eslintrc` file in the project root and enter the below contents:
     ]
   },
   "plugins": ["prettier", "react", "react-hooks"]
+}
+```
+
+#### For Nodejs
+```json
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "prettier
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2023": true,
+    "jest": true
+  },
+  "rules": {
+    "no-console": 0,
+    "indent": 0,
+    "linebreak-style": 0,
+    "no-nested-ternary": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100,
+        "tabWidth": 2,
+        "semi": true,
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "plugins": ["prettier"]
 }
 ```
