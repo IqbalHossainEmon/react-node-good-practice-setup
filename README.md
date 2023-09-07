@@ -57,12 +57,19 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 ## Linting Setup
 
 ### Install Dev Dependencies
-
+#### For React
+```
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
+```
 ```
 npm init @eslint/config
 ```
+#### For Nodejs
 ```
-npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+```
+```
+npm init @eslint/config
 ```
 
 
