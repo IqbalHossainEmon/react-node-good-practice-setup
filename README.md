@@ -146,6 +146,7 @@ Create a `.eslintrc` file in the project root and enter the below contents:
 {
   "extends": [
     "airbnb",
+    "airbnb-base",
     "airbnb/hooks",
     "eslint:recommended",
     "prettier
