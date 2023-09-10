@@ -62,16 +62,20 @@ ___React___
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
 ```
+```
+npm init @eslint/config
+```
+___
 ___Nodejs___
 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
-___
-___Both___
 ```
 npm init @eslint/config
 ```
+
+
 
 
 ### Create Linting Configuration file manually
