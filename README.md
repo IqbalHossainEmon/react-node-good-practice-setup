@@ -62,32 +62,13 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
 ```
-
-or
-
-```
-yarn add -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
-```
-
-___
-
-```
-npm init @eslint/config
-```
-
 #### For Nodejs
 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
-or
-
-```
-yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
-```
-
 ___
-
+#### For Both
 ```
 npm init @eslint/config
 ```
