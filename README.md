@@ -24,7 +24,7 @@ Follow the below settings for VS Code -
 
 ```json
 {
-    // config related to code formatting
+    /* config related to code formatting */
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "[javascript]": {
@@ -35,14 +35,14 @@ Follow the below settings for VS Code -
         "editor.formatOnSave": false,
         "editor.defaultFormatter": null
     },
-    "javascript.validate.enable": false, //disable all built-in syntax checking
+    "javascript.validate.enable": false, /* disable all built-in syntax checking */
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true,
         "source.fixAll.tslint": true,
         "source.organizeImports": true
     },
     "eslint.alwaysShowStatus": true,
-    // emmet
+    /* emmet */
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
