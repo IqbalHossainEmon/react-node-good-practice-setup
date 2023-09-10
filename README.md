@@ -57,7 +57,7 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 ## Linting Setup
 
 ### Install Dev Dependencies
-___React___
+__React__
 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
@@ -66,7 +66,7 @@ npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-pa
 npm init @eslint/config
 ```
 ___
-___Nodejs___
+__Nodejs__
 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier
@@ -82,7 +82,7 @@ npm init @eslint/config
 
 Create a `.eslintrc` file in the project root and enter the below contents:
 
-#### For React
+__React__
 ```json
 {
   "extends": [
@@ -136,7 +136,7 @@ Create a `.eslintrc` file in the project root and enter the below contents:
 }
 ```
 
-#### For Nodejs
+__Nodejs__
 ```json
 {
   "extends": ["airbnb-base", "eslint:recommended", "prettier"],
