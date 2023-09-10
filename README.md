@@ -66,7 +66,7 @@ npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-pa
 npm init @eslint/config
 ```
 ___
-__Nodejs__
+__Node__
 
 ```
 npm i -D eslint-config-prettier eslint-plugin-prettier prettier
@@ -136,7 +136,7 @@ __React__
 }
 ```
 
-__Nodejs__
+__Node__
 ```json
 {
   "extends": ["airbnb-base", "eslint:recommended", "prettier"],
