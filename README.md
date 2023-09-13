@@ -120,6 +120,7 @@ __React__
     "jsx-a11y/click-events-have-key-events": 0,
     "no-param-reassign": 0,
     "no-nested-ternary": 0,
+    "no-plusplus": 0,
     "prettier/prettier": [
       "error",
       {
@@ -154,6 +155,7 @@ __Node__
     "indent": 0,
     "linebreak-style": 0,
     "no-nested-ternary": 0,
+    "no-": 0,
     "prettier/prettier": [
       "error",
       {
