@@ -155,7 +155,7 @@ __Node__
     "indent": 0,
     "linebreak-style": 0,
     "no-nested-ternary": 0,
-    "no-": 0,
+    "no-plusplus": 0,
     "prettier/prettier": [
       "error",
       {
