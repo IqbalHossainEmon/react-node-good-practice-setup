@@ -130,6 +130,7 @@ __React__
         "tabWidth": 2,
         "semi": true,
         "endOfLine": "auto"
+        "arrowParens": "avoid",
       }
     ]
   },
@@ -155,6 +156,7 @@ __Node__
     "indent": 0,
     "linebreak-style": 0,
     "no-nested-ternary": 0,
+    "no-underscore-dangle": 0,
     "no-plusplus": 0,
     "prettier/prettier": [
       "error",
@@ -165,6 +167,7 @@ __Node__
         "tabWidth": 2,
         "semi": true,
         "endOfLine": "auto"
+        "arrowParens": "avoid",
       }
     ]
   },
