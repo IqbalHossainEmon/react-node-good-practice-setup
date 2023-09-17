@@ -166,7 +166,7 @@ __Node__
         "printWidth": 100,
         "tabWidth": 2,
         "semi": true,
-        "endOfLine": "auto"
+        "endOfLine": "auto",
         "arrowParens": "avoid",
       }
     ]
