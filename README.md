@@ -120,7 +120,7 @@ __React__
     "jsx-a11y/click-events-have-key-events": 0,
     "no-param-reassign": 0,
     "no-nested-ternary": 0,
-    "no-plusplus": 0,,
+    "no-plusplus": 0,
     "no-unused-vars": ["error", { "argsIgnorePattern": "_" }],
     "prettier/prettier": [
       "error",
@@ -158,7 +158,7 @@ __Node__
     "linebreak-style": 0,
     "no-nested-ternary": 0,
     "no-underscore-dangle": 0,
-    "no-plusplus": 0,,
+    "no-plusplus": 0,
     "no-unused-vars": ["error", { "argsIgnorePattern": "_" }],
     "prettier/prettier": [
       "error",
