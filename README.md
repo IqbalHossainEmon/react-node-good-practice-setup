@@ -69,7 +69,10 @@ ___
 __Node__
 
 ```
-npm init -y & npm i -D eslint-config-prettier eslint-plugin-prettier prettier
+npm init -y
+```
+```
+npm i -D eslint-config-prettier eslint-plugin-prettier prettier
 ```
 ```
 npm init @eslint/config
