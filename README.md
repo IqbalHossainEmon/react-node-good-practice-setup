@@ -131,7 +131,7 @@ __React__
         "tabWidth": 2,
         "semi": true,
         "endOfLine": "auto"
-        "arrowParens": "avoid",
+        "arrowParens": "avoid"
       }
     ]
   },
@@ -169,7 +169,7 @@ __Node__
         "tabWidth": 2,
         "semi": true,
         "endOfLine": "auto",
-        "arrowParens": "avoid",
+        "arrowParens": "avoid"
       }
     ]
   },
