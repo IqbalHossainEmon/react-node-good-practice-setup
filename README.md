@@ -60,7 +60,7 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 __React__
 
 ```
-npm i -D eslint-config-prettier eslint-plugin-prettier prettier @babel/eslint-parser @babel/preset-react
+npm install prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb eslint-plugin-jsx-a11y --save-dev --legacy-peer-deps
 ```
 ```
 npm init @eslint/config
@@ -84,60 +84,65 @@ Create a `.eslintrc` file in the project root and enter the below contents:
 
 __React__
 ```json
-{
-  "extends": [
-    "airbnb",
-    "airbnb/hooks",
-    "eslint:recommended",
-    "prettier",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended"
-  ],
-  "parser": "@babel/eslint-parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "requireConfigFile": false,
-    "babelOptions": {
-      "presets": ["@babel/preset-react"]
-    }
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "es2023": true,
-    "jest": true
-  },
-  "rules": {
-    "react/jsx-props-no-spreading": 0,
-    "react/react-in-jsx-scope": 0,
-    "react-hooks/rules-of-hooks": "error",
-    "no-console": 0,
-    "react/state-in-constructor": 0,
-    "indent": 0,
-    "linebreak-style": 0,
-    "react/prop-types": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "no-param-reassign": 0,
-    "no-nested-ternary": 0,
-    "react/function-component-definition": 0,
-    "no-plusplus": 0,
-    "no-unused-vars": ["error", { "argsIgnorePattern": "_" }],
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 4,
-        "semi": true,
-        "endOfLine": "auto",
-        "arrowParens": "avoid"
-      }
-    ]
-  },
-  "plugins": ["prettier", "react", "react-hooks"]
-}
+import js from '@eslint/js';
+import airbnb from 'eslint-config-airbnb';
+import prettierConfig from 'eslint-config-prettier';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import prettierPlugin from 'eslint-plugin-prettier';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
+import prettier from 'prettier';
+
+export default [
+	{ ignores: ['dist'] },
+	{
+		files: ['**/*.{js,jsx}'],
+		languageOptions: {
+			ecmaVersion: 'latest',
+			globals: globals.browser,
+			parserOptions: {
+				ecmaVersion: 'latest',
+				ecmaFeatures: { jsx: true },
+				sourceType: 'module',
+			},
+		},
+		settings: { react: { version: '18.3' } },
+		plugins: {
+			react,
+			'react-hooks': reactHooks,
+			'react-refresh': reactRefresh,
+			prettier: prettierPlugin,
+			'jsx-a11y': jsxA11y,
+		},
+		rules: {
+			...js.configs.recommended.rules,
+			...react.configs.recommended.rules,
+			...react.configs['jsx-runtime'].rules,
+			...reactHooks.configs.recommended.rules,
+			...airbnb.rules,
+			...prettier.rules,
+			...jsxA11y.configs.recommended.rules,
+			...prettierConfig.rules,
+			'prettier/prettier': [
+				'error',
+				{
+					trailingComma: 'es5',
+					singleQuote: true,
+					printWidth: 100,
+					tabWidth: 4,
+					useTabs: true,
+					semi: true,
+					endOfLine: 'auto',
+					arrowParens: 'avoid',
+				},
+			],
+			'react/jsx-no-target-blank': 'off',
+			'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+		},
+	},
+];
 ```
 
 __Node__
