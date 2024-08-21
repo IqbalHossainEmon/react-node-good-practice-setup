@@ -78,9 +78,9 @@ npm init @eslint/config
 
 
 
-### Create Linting Configuration file manually
+### Linting Configuration file manually
 
-Create a `.eslintrc` file in the project root and enter the below contents:
+Change the `eslint.config.js` file in the project root with the below contents:
 
 __React__
 ```javascript
@@ -96,53 +96,70 @@ import globals from 'globals';
 import prettier from 'prettier';
 
 export default [
-    { ignores: ['dist'] },
-    {
-        files: ['**/*.{js,jsx}'],
-        languageOptions: {
-            ecmaVersion: 'latest',
-            globals: globals.browser,
-            parserOptions: {
-                ecmaVersion: 'latest',
-                ecmaFeatures: { jsx: true },
-                sourceType: 'module',
-            },
-        },
-        settings: { react: { version: '18.3' } },
-        plugins: {
-            react,
-            'react-hooks': reactHooks,
-            'react-refresh': reactRefresh,
-            prettier: prettierPlugin,
-            'jsx-a11y': jsxA11y,
-        },
-        rules: {
-            ...js.configs.recommended.rules,
-            ...react.configs.recommended.rules,
-            ...react.configs['jsx-runtime'].rules,
-            ...reactHooks.configs.recommended.rules,
-            ...airbnb.rules,
-            ...prettier.rules,
-            ...jsxA11y.configs.recommended.rules,
-            ...prettierConfig.rules,
-            'prettier/prettier': [
-                'error',
-                {
-                    trailingComma: 'es5',
-                    singleQuote: true,
-                    printWidth: 100,
-                    tabWidth: 4,
-                    useTabs: true,
-                    semi: true,
-                    endOfLine: 'auto',
-                    arrowParens: 'avoid',
-                },
-            ],
-            'react/jsx-no-target-blank': 'off',
-            'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-        },
-    },
+	{ ignores: ['dist'] },
+	{
+		files: ['**/*.{js,jsx}'],
+		languageOptions: {
+			ecmaVersion: 'latest',
+			globals: globals.browser,
+			parserOptions: {
+				ecmaVersion: 'latest',
+				ecmaFeatures: { jsx: true },
+				sourceType: 'module',
+			},
+		},
+		settings: { react: { version: '18.3' } },
+		plugins: {
+			react,
+			'react-hooks': reactHooks,
+			'react-refresh': reactRefresh,
+			prettier: prettierPlugin,
+			'jsx-a11y': jsxA11y,
+		},
+		rules: {
+			...js.configs.recommended.rules,
+			...react.configs.recommended.rules,
+			...react.configs['jsx-runtime'].rules,
+			...reactHooks.configs.recommended.rules,
+			...airbnb.rules,
+			...prettier.rules,
+			...jsxA11y.configs.recommended.rules,
+			...prettierConfig.rules,
+			'prettier/prettier': [
+				'error',
+				{
+					trailingComma: 'es5',
+					singleQuote: true,
+					printWidth: 100,
+					tabWidth: 4,
+					useTabs: true,
+					semi: true,
+					endOfLine: 'auto',
+					arrowParens: 'avoid',
+				},
+			],
+			'one-var': ['error', { initialized: 'never' }],
+			'react/prop-types': 'off',
+			'react/jsx-no-target-blank': 'off',
+			'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+		},
+	},
 ];
+```
+
+[Bonus] If your snippets, auto imports and other vs code feature not working properly then create a `jsconfig.json` file in the root of your project and enter the below contents:
+
+```json
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"module": "esnext",
+		"target": "es6",
+		"moduleResolution": "node"
+	},
+	"exclude": ["node_modules", "build"],
+	"include": ["src/**/*"]
+}
 ```
 
 __Node__
