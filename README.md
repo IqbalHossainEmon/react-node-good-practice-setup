@@ -3,7 +3,6 @@
 
 -   [Plugins](#plugins)
 -   [Settings](#settings)
--   [Linting Setup](#linting-setup)
 -   [Install Dev Dependencies](#install-dev-dependencies)
 -   [Linting Configuration file manually](#linting-configuration-file-manually)
 
