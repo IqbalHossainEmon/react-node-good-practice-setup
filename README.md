@@ -63,9 +63,6 @@ __React__
 ```
 npm install prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import --save-dev --legacy-peer-deps
 ```
-```
-npm init @eslint/config
-```
 ___
 __Node__
 
