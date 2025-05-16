@@ -171,7 +171,7 @@ export default [
 ```
 
 __Node__
-```json
+```javascript
 import js from '@eslint/js';
 import globals from 'globals';
 import prettier from 'eslint-plugin-prettier';
