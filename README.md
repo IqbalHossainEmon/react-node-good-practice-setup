@@ -52,7 +52,7 @@ Follow the below settings for VS Code -
 __React__
 
 ```
-npm i -D prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import --save-dev --legacy-peer-deps
+npm i -D prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-import
 ```
 ___
 __Node__
@@ -283,7 +283,7 @@ export default defineConfig([
 	"include": ["src/**/*"]
 }
 ```
-
+### Node eslint might not work properly
 __Node__
 ```javascript
 import js from '@eslint/js';
