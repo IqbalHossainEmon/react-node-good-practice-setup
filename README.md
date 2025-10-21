@@ -1,4 +1,3 @@
-# This is a temporary solution :)
 ## Table of Contents
 
 -   [Plugins](#plugins)
@@ -53,7 +52,7 @@ Follow the below settings for VS Code -
 __React__
 
 ```
-npm install prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import --save-dev --legacy-peer-deps
+npm i -D prettier eslint-plugin-prettier eslint-config-prettier eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import --save-dev --legacy-peer-deps
 ```
 ___
 __Node__
